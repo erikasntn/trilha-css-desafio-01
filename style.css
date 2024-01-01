@@ -1,0 +1,230 @@
+body {
+  background-color: black;
+}
+.image-container {
+  position: relative;
+  width: 100%;
+  height: auto; 
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 5% 10%;
+  background-image: linear-gradient(rgba(3, 4, 46, 0.8), rgba(19, 48, 27, 0.6));
+  border-bottom: 1px solid #33a8db;
+}
+.overlay-content h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.1;
+  color: #33a8db;
+  background-image: linear-gradient(180deg, #33a8db 0%, #1472b7 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+.overlay-content p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.overlay-content p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.overlay-content button {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  width: 20vw;
+  height: 10vh;
+  border: 2px solid rgba(49, 168, 221, 1);
+  color: rgba(49, 168, 221, 1);
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+.overlay-content button:hover {
+  background-color: black;
+}
+
+.logo img {
+  margin-bottom: 5%;
+  max-width: 20vw;
+  width: auto;
+  height: auto;
+  max-height: 30vh;
+}
+
+#course-content {
+  margin-top: 5%;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#course-content h2 {
+  text-transform: uppercase;
+  color: #33a8db;
+  background-image: linear-gradient(180deg, #33a8db 0%, #1472b7 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 10px;
+}
+
+#course-content p {
+    color: white;
+}
+
+#course-content .modules-list .module:hover{
+    background-color:#0d0d0d;
+  }
+  
+  #course-content .modules-list .module span {
+    color: #33A8DB;
+    align-items: center;
+    justify-content: center;
+    
+
+  }
+  
+  #course-content .modules-list .module {
+    color: white;
+    width: 530px;
+    margin: 0 auto 24px;
+    border: 1px solid #33a8db;
+    background-color: #252525;
+    padding: 16px;
+    border-radius: 100px;
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  #transform-world {
+    height: 70vh; 
+    background-size: cover;
+    background-image: url("assets/images/woman-code.png");
+    background-attachment:fixed;
+    border-top: 1px solid #33A8DB80;
+    border-bottom: 1px solid #33A8DB80;
+   
+  }
+
+ 
+  #transform-world p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    text-transform: lowercase;
+    margin-top: 8%;
+    margin-left: 8%;
+    text-shadow: 3px 2px #33A8DB;
+    color: white;
+  }
+  
+  #professional-challenges {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    
+  }
+  #professional-challenges h2 {
+    color: #33A8DB;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+
+  }
+
+  #professional-challenges p {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    text-transform: none;
+    flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  }
+  
+  
+  .text-degrade:hover{
+    background:linear-gradient(to right,  #20A7F2, #6150D4, #F34C5D);
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  footer {
+    padding: 60px 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+    border-top: 1px solid #33A8DB80;
+  }
+  
+  footer .dio-logo {
+    width: 300px;
+  }
+  
+  footer a {
+    color: #33A8DB;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  footer p {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  footer a, p{
+    font-family: "Raleway", sans-serif;
+
+
+  }
+
+@media (max-width: 768px) {
+  .overlay-content {
+    padding: 10px;
+  }
+
+  .logo img {
+    margin-bottom: 5%;
+    max-width: 10vw;
+    width: auto;
+    height: auto;
+    max-height: 20vh;
+  }
+
+  h1,
+  p,
+  button {
+    max-width: 90%;
+  }
+}
